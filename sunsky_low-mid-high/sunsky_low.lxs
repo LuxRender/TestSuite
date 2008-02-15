@@ -1,0 +1,46 @@
+# Lux Render v0.1 Scene File
+# Exported by LuxBlend_01_alpha12
+
+LookAt 5.976133 -6.676775 1.226011   5.169733 -6.085405 1.225659 -0.000196 0.000328 1.000000
+Camera "perspective" "float fov" [37.849289] "float lensradius" [0.000000] "float focaldistance" [2.000000] 
+
+Film "multiimage"
+     "integer xresolution" [1024] "integer yresolution" [768]
+	 "string igi_filename" ["sunsky_low.igi"]
+	 	"integer igi_writeinterval" [120]
+	 "string hdr_filename" ["sunsky_low.exr"]
+	 	"integer hdr_writeinterval" [120]
+	 "string ldr_filename" ["sunsky_low.tga"]
+		"integer ldr_writeinterval" [120]
+		"integer ldr_displayinterval" [12]
+		"string tonemapper" ["reinhard"]
+			"float reinhard_prescale" [1.000000]
+			"float reinhard_postscale" [1.000000]
+			"float reinhard_burn" [6.000000]
+		"float gamma" [2.200000]
+		"float dither" [0.000000]
+
+PixelFilter "gaussian" "float xwidth" [2.000000] "float ywidth" [2.000000]
+
+Sampler "lowdiscrepancy" "string pixelsampler" ["lowdiscrepancy"] "integer pixelsamples" [4]
+
+SurfaceIntegrator "path" "integer maxdepth" [7] 
+
+Accelerator "kdtree"
+
+
+WorldBegin
+
+AttributeBegin
+LightSource "sunsky" "integer nsamples" [1]
+            "vector sundir" [-0.419128 -0.881370 0.217989]
+		"color L" [1.000000 1.000000 1.000000]
+		"float turbidity" [2.000000]
+AttributeEnd
+
+Include "sunsky_low-mat.lxm"
+
+Include "sunsky_low-geom.lxo"
+
+WorldEnd
+

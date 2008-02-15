@@ -1,0 +1,39 @@
+# Dummy Material 'Default'
+Texture "Kd-Default" "color" "constant" "color value" [0.5 0.5 0.5]
+
+	# Material 'monkey'
+# Type: 'matte' (Lambertian)
+Texture "Kd-monkey" "color" "constant" "color value" [0.612 0.612 0.612]
+Texture "sigma-monkey" "float" "constant" "float value" [0.000000]
+Texture "bumpmap-monkey" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'bars'
+# Type: 'matte' (Lambertian)
+Texture "Kd-bars" "color" "constant" "color value" [1.000 1.000 1.000]
+Texture "sigma-bars" "float" "constant" "float value" [0.000000]
+Texture "bumpmap-bars" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'glass'
+# Type: 'glass'
+Texture "Kr-glass" "color" "constant" "color value" [1.000 1.000 1.000]
+Texture "Kt-glass" "color" "constant" "color value" [1.000 1.000 1.000]
+Texture "index-glass" "float" "constant" "float value" [1.500000]
+Texture "bumpmap-glass" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'box'
+# Type: 'matte' (Lambertian)
+Texture "Kd-box" "color" "constant" "color value" [1.000 1.000 1.000]
+Texture "sigma-box" "float" "constant" "float value" [0.000000]
+Texture "bumpmap-box" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'floor_plane'
+# Type: 'matte' (Lambertian)
+Texture "Kd-floor_plane" "color" "constant" "color value" [1.000 1.000 1.000]
+Texture "sigma-floor_plane" "float" "constant" "float value" [0.000000]
+Texture "bumpmap-floor_plane" "float" "constant" "float value" [0.000000]
+#####
+
