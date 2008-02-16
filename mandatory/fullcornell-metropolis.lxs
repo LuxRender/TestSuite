@@ -6,11 +6,11 @@ Camera "perspective" "float fov" [39.146252] "float lensradius" [0.000000] "floa
 
 Film "multiimage"
      "integer xresolution" [600] "integer yresolution" [600]
-	 "string igi_filename" ["fullcornell-path.igi"]
+	 "string igi_filename" ["fullcornell-mlt.igi"]
 	 	"integer igi_writeinterval" [120]
-	 "string hdr_filename" ["fullcornell-path.exr"]
+	 "string hdr_filename" ["fullcornell-mlt.exr"]
 	 	"integer hdr_writeinterval" [120]
-	 "string ldr_filename" ["fullcornell-path.tga"]
+	 "string ldr_filename" ["fullcornell-mlt.tga"]
 		"integer ldr_writeinterval" [120]
 		"integer ldr_displayinterval" [12]
 		"string tonemapper" ["reinhard"]
