@@ -1,0 +1,50 @@
+# Lux Render v0.1 Scene File
+# Exported by LuxBlend_01_alphaCVS
+
+LookAt -0.156251 -1.830862 1.616265   -0.096779 -0.878154 1.318254 0.018567 0.297432 0.954562
+Camera "perspective" "float fov" [51.282012] "float hither" [0.100000] "float yon" [100.000000] "float shutteropen" [0.000000] "float shutterclose" [1.000000] "float screenwindow" [-1.333333 1.333333 -1.000000 1.000000] "float lensradius" [0.000000] "float focaldistance" [0.000000]
+
+Film "multiimage"
+     "integer xresolution" [800] "integer yresolution" [600]
+	 "string igi_filename" ["SunSky_Params.igi"]
+	 	"integer igi_writeinterval" [120]
+	 "string hdr_filename" ["SunSky_Params.exr"]
+	 	"integer hdr_writeinterval" [120]
+	 "string ldr_filename" ["SunSky_Params.tga"]
+		"integer ldr_writeinterval" [120]
+		"integer ldr_displayinterval" [12]
+		"string tonemapper" ["reinhard"]
+			"float reinhard_prescale" [1.000000]
+			"float reinhard_postscale" [1.000000]
+			"float reinhard_burn" [5.000000]
+		"float gamma" [2.200000]
+		"float dither" [0.000000]
+
+
+PixelFilter "gaussian" "float alpha" [2.000000] "float xwidth" [1.000000] "float ywidth" [1.000000]
+
+Sampler "lowdiscrepancy" "string pixelsampler" ["lowdiscrepancy"] "integer pixelsamples" [4]
+
+SurfaceIntegrator "directlighting" "string strategy" ["one"] "integer maxdepth" [5]
+
+Accelerator "kdtree"
+
+
+WorldBegin
+
+AttributeBegin
+Rotate 0 0 0 1
+LightSource "sunsky" "integer nsamples" [1]
+            "vector sundir" [0.579228 0.405580 0.707107]
+		"color L" [1.000000 1.000000 1.000000]
+		"float turbidity" [2.000000]
+		"float aconst" [0.500000] "float bconst" [0.500000] "float cconst" [1.000000] "float bconst" [1.000000] "float bconst" [1.000000]
+		"float relsize" [2.000000]
+AttributeEnd
+
+Include "SunSky_Params-mat.lxm"
+
+Include "SunSky_Params-geom.lxo"
+
+WorldEnd
+

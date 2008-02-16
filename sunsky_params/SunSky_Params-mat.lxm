@@ -1,0 +1,36 @@
+	# Material 'Shiny'
+# Type: 'shinymetal'
+Texture "Ks-Shiny" "color" "constant" "color value" [1.000 1.000 1.000]
+Texture "Kr-Shiny" "color" "constant" "color value" [1.000 1.000 1.000]
+Texture "roughness-Shiny" "float" "constant" "float value" [0.000391]
+Texture "bumpmap-Shiny" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'Material'
+# Type: emitter
+# See geometry block.
+
+#####
+
+	# Material 'Grey.001'
+# Type: 'substrate'
+Texture "Kd-Grey.001" "color" "constant" "color value" [0.612 0.612 0.612]
+Texture "Ks-Grey.001" "color" "constant" "color value" [0.218 0.218 0.218]
+Texture "uroughness-Grey.001" "float" "constant" "float value" [0.004000]
+Texture "vroughness-Grey.001" "float" "constant" "float value" [0.004000]
+Texture "bumpmap-Grey.001" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'Grey'
+# Type: 'matte' (Lambertian)
+Texture "Kd-Grey" "color" "constant" "color value" [0.612 0.612 0.612]
+Texture "sigma-Grey" "float" "constant" "float value" [0.000000]
+Texture "bumpmap-Grey" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'Mirror'
+# Type: 'mirror'
+Texture "Kr-Mirror" "color" "constant" "color value" [0.612 0.612 0.612]
+Texture "bumpmap-Mirror" "float" "constant" "float value" [0.000000]
+#####
+
