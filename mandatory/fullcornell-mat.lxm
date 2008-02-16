@@ -1,0 +1,112 @@
+# Dummy Material 'Default'
+Texture "Kd-Default" "color" "constant" "color value" [0.5 0.5 0.5]
+
+	# Material 'mirrormonkey'
+# Type: 'mirror'
+Texture "Kr-mirrormonkey" "color" "constant" "color value" [0.147 0.458 0.185]
+Texture "bumpmap-mirrormonkey" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'plasticmonkey'
+# Type: 'plastic'
+Texture "Kd-plasticmonkey" "color" "constant" "color value" [1.000 0.537 0.000]
+Texture "Ks-plasticmonkey" "color" "constant" "color value" [0.112 0.112 0.112]
+Texture "roughness-plasticmonkey" "float" "constant" "float value" [0.000571]
+Texture "bumpmap-plasticmonkey" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'shinymonkey'
+# Type: 'shinymetal'
+Texture "Ks-shinymonkey" "color" "constant" "color value" [1.000 1.000 1.000]
+Texture "Kr-shinymonkey" "color" "constant" "color value" [1.000 1.000 1.000]
+Texture "roughness-shinymonkey" "float" "constant" "float value" [0.003333]
+Texture "bumpmap-shinymonkey" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'diffusemonkey'
+# Type: 'matte' (Lambertian)
+Texture "Kd-diffusemonkey" "color" "constant" "color value" [0.426 0.355 0.141]
+Texture "sigma-diffusemonkey" "float" "constant" "float value" [0.000000]
+Texture "bumpmap-diffusemonkey" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'mirrortopmonkey'
+# Type: 'mirror'
+Texture "Kr-mirrortopmonkey" "color" "constant" "color value" [1.000 1.000 1.000]
+Texture "bumpmap-mirrortopmonkey" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'glassmonkey'
+# Type: 'glass'
+Texture "Kr-glassmonkey" "color" "constant" "color value" [1.000 1.000 1.000]
+Texture "Kt-glassmonkey" "color" "constant" "color value" [1.000 1.000 1.000]
+Texture "index-glassmonkey" "float" "constant" "float value" [1.500000]
+Texture "bumpmap-glassmonkey" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'pngdiffuse'
+# Type: 'matte' (Lambertian)
+Texture "Kd-map-pngdiffuse" "color" "imagemap" "string filename" ["pngtestimage.png"] "float vscale" [-1.0]
+Texture "Kd-scale-pngdiffuse" "color" "constant" "color value" [1.000000 1.000000 1.000000]
+Texture "Kd-pngdiffuse" "color" "scale" "texture tex1" ["Kd-map-pngdiffuse"] "texture tex2" ["Kd-scale-pngdiffuse"]
+Texture "sigma-pngdiffuse" "float" "constant" "float value" [0.000000]
+Texture "bumpmap-pngdiffuse" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'white'
+# Type: 'matte' (Lambertian)
+Texture "Kd-white" "color" "constant" "color value" [1.000 1.000 1.000]
+Texture "sigma-white" "float" "constant" "float value" [0.000000]
+Texture "bumpmap-white" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'jpgdiffuse'
+# Type: 'matte' (Lambertian)
+Texture "Kd-map-jpgdiffuse" "color" "imagemap" "string filename" ["jpgtestimage.jpg"] "float vscale" [-1.0]
+Texture "Kd-scale-jpgdiffuse" "color" "constant" "color value" [1.000000 1.000000 1.000000]
+Texture "Kd-jpgdiffuse" "color" "scale" "texture tex1" ["Kd-map-jpgdiffuse"] "texture tex2" ["Kd-scale-jpgdiffuse"]
+Texture "sigma-jpgdiffuse" "float" "constant" "float value" [0.000000]
+Texture "bumpmap-jpgdiffuse" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'mirror'
+# Type: 'mirror'
+Texture "Kr-mirror" "color" "constant" "color value" [1.000 1.000 1.000]
+Texture "bumpmap-mirror" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'red'
+# Type: 'matte' (Lambertian)
+Texture "Kd-red" "color" "constant" "color value" [1.000 0.000 0.000]
+Texture "sigma-red" "float" "constant" "float value" [0.000000]
+Texture "bumpmap-map-red" "float" "imagemap" "string filename" ["bumptestimage.png"] "float vscale" [-1.0]
+Texture "bumpmap-scale-red" "float" "constant" "float value" [0.050000]
+Texture "bumpmap-red" "float" "scale" "texture tex1" ["bumpmap-map-red"] "texture tex2" ["bumpmap-scale-red"]
+#####
+
+	# Material 'green'
+# Type: 'substrate'
+Texture "Kd-green" "color" "constant" "color value" [0.000 1.000 0.000]
+Texture "Ks-map-green" "color" "imagemap" "string filename" ["bumptestimage.png"] "float vscale" [-1.0]
+Texture "Ks-scale-green" "color" "constant" "color value" [1.000000 1.000000 1.000000]
+Texture "Ks-green" "color" "scale" "texture tex1" ["Ks-map-green"] "texture tex2" ["Ks-scale-green"]
+Texture "uroughness-green" "float" "constant" "float value" [0.001333]
+Texture "vroughness-green" "float" "constant" "float value" [0.001333]
+Texture "bumpmap-green" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'light'
+# Type: emitter
+# See geometry block.
+
+#####
+
+	# Material 'floor'
+# Type: 'substrate'
+Texture "Kd-floor" "color" "constant" "color value" [0.029 0.029 0.029]
+Texture "Ks-floor" "color" "constant" "color value" [0.010 0.010 0.010]
+Texture "uroughness-floor" "float" "constant" "float value" [0.003333]
+Texture "vroughness-floor" "float" "constant" "float value" [0.003333]
+Texture "bumpmap-floor" "float" "constant" "float value" [0.000000]
+#####
+
