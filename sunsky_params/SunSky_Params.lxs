@@ -38,7 +38,7 @@ LightSource "sunsky" "integer nsamples" [1]
             "vector sundir" [0.579228 0.405580 0.707107]
 		"color L" [1.000000 1.000000 1.000000]
 		"float turbidity" [2.000000]
-		"float aconst" [0.500000] "float bconst" [0.500000] "float cconst" [1.000000] "float bconst" [1.000000] "float bconst" [1.000000]
+		"float aconst" [0.500000] "float bconst" [0.500000] "float cconst" [1.000000] "float dconst" [1.000000] "float econst" [1.000000]
 		"float relsize" [2.000000]
 AttributeEnd
 
