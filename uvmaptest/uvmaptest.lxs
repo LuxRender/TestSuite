@@ -1,0 +1,45 @@
+# Lux Render v0.1 Scene File
+# Exported by LuxBlend_01_alpha12
+
+LookAt 8.246159 -5.172694 5.157228   7.609650 -4.531818 4.728118 -0.303322 0.303533 0.903252
+Camera "perspective" "float fov" [43.602819] "float lensradius" [0.000000] "float focaldistance" [2.000000] 
+
+Film "multiimage"
+     "integer xresolution" [800] "integer yresolution" [600]
+	 "string hdr_filename" ["out.exr"]
+	 	"integer hdr_writeinterval" [120]
+	 "string ldr_filename" ["out.tga"]
+		"integer ldr_writeinterval" [120]
+		"integer ldr_displayinterval" [12]
+		"string tonemapper" ["reinhard"]
+			"float reinhard_prescale" [1.000000]
+			"float reinhard_postscale" [1.000000]
+			"float reinhard_burn" [6.000000]
+		"float gamma" [2.200000]
+		"float dither" [0.000000]
+
+PixelFilter "gaussian" "float xwidth" [2.000000] "float ywidth" [2.000000]
+
+Sampler "metropolis" 
+#Sampler "random"
+
+SurfaceIntegrator "path" "integer maxdepth" [5] 
+
+Accelerator "kdtree"
+
+
+WorldBegin
+
+AttributeBegin
+LightSource "sunsky" "integer nsamples" [1]
+            "vector sundir" [-0.502418 -0.516176 0.693642]
+		"color L" [0.005000 0.005000 0.005000]
+		"float turbidity" [2.000000]
+AttributeEnd
+
+Include "uvmaptest-mat.lxm"
+
+Include "uvmaptest-geom.lxo"
+
+WorldEnd
+
