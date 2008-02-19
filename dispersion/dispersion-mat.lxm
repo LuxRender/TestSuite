@@ -1,0 +1,32 @@
+# Dummy Material 'Default'
+Texture "Kd-Default" "color" "constant" "color value" [0.5 0.5 0.5]
+
+	# Material 'emit'
+# Type: emitter
+# See geometry block.
+
+#####
+
+	# Material 'glass'
+# Type: 'glass'
+Texture "Kr-glass" "color" "constant" "color value" [1.000 1.000 1.000]
+Texture "Kt-glass" "color" "constant" "color value" [1.000 1.000 1.000]
+Texture "cauchyb-glass" "float" "constant" "float value" [0.050000]
+Texture "index-glass" "float" "constant" "float value" [1.500000]
+Texture "bumpmap-glass" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'black'
+# Type: 'matte' (Lambertian)
+Texture "Kd-black" "color" "constant" "color value" [0.297 0.297 0.297]
+Texture "sigma-black" "float" "constant" "float value" [0.000000]
+Texture "bumpmap-black" "float" "constant" "float value" [0.000000]
+#####
+
+	# Material 'floor_plane'
+# Type: 'matte' (Lambertian)
+Texture "Kd-floor_plane" "color" "constant" "color value" [1.000 1.000 1.000]
+Texture "sigma-floor_plane" "float" "constant" "float value" [0.000000]
+Texture "bumpmap-floor_plane" "float" "constant" "float value" [0.000000]
+#####
+

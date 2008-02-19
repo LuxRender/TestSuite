@@ -1,0 +1,41 @@
+# Lux Render v0.1 Scene File
+# Exported by LuxBlend_01_alpha12
+
+LookAt -12.282154 -14.691715 4.657723   -11.715071 -13.984018 4.236319 0.263825 0.328600 0.906873
+Camera "perspective" "float fov" [37.849289] "float lensradius" [0.000000] "float focaldistance" [2.000000] 
+
+Film "multiimage"
+     "integer xresolution" [800] "integer yresolution" [600]
+	 "string igi_filename" ["dispersion-mlt.igi"]
+	 	"integer igi_writeinterval" [120]
+	 "string hdr_filename" ["dispersion-mlt.exr"]
+	 	"integer hdr_writeinterval" [120]
+	 "string ldr_filename" ["dispersion-mlt.tga"]
+		"integer ldr_writeinterval" [120]
+		"integer ldr_displayinterval" [12]
+		"string tonemapper" ["reinhard"]
+			"float reinhard_prescale" [1.000000]
+			"float reinhard_postscale" [1.000000]
+			"float reinhard_burn" [6.000000]
+		"float gamma" [2.200000]
+		"float dither" [0.000000]
+
+PixelFilter "gaussian" "float xwidth" [2.000000] "float ywidth" [2.000000]
+
+Sampler "metropolis"
+
+SurfaceIntegrator "path" "integer maxdepth" [12]
+
+
+Accelerator "kdtree"
+
+
+WorldBegin
+
+
+Include "dispersion-mat.lxm"
+
+Include "dispersion-geom.lxo"
+
+WorldEnd
+
