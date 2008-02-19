@@ -22,7 +22,7 @@ Film "multiimage"
 
 PixelFilter "gaussian" "float xwidth" [2.000000] "float ywidth" [2.000000]
 
-Sampler "metropolis" "float largemutationprob" [.1]
+Sampler "metropolis" "float largemutationprob" [.01]
 
 SurfaceIntegrator "path" "integer maxdepth" [12]
 
