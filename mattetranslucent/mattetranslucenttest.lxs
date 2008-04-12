@@ -1,0 +1,20 @@
+# Lux Render v0.1 Scene File
+# Exported by LuxBlend_0.1_alpha-MatEditor
+
+LookAt -4.027194 -5.913150 3.635264 -3.136788 -5.457983 3.635264 0.000000 0.000000 1.000000
+Camera "perspective" "float fov" [59.489761] "float hither" [0.100000] "float yon" [100.000000] "float lensradius" [0.000000] "float focaldistance" [0.000000] "float shutteropen" [0.000000] "float shutterclose" [1.000000] "float screenwindow" [-1.000000 1.000000 -0.750000 0.750000]
+
+Film "multiimage" "integer xresolution" [1024] "integer yresolution" [768] "string tonemapper" ["reinhard"] "float reinhard_burn" [6.000000] "float reinhard_prescale" [1.000000] "float reinhard_postscale" [1.000000] "float gamma" [2.200000] "float dither" [0.000000] "float bloomwidth" [0.000000] "float bloomradius" [0.000000] "integer ldr_displayinterval" [12] "string igi_filename" ["c:\\lux\\current\\testsuite\\mattetranslucent\\mattetranslucenttest.igi"] "integer igi_writeinterval" [120] "string hdr_filename" ["c:\\lux\\current\\testsuite\\mattetranslucent\\mattetranslucenttest.exr"] "integer hdr_writeinterval" [120] "string ldr_filename" ["c:\\lux\\current\\testsuite\\mattetranslucent\\mattetranslucenttest.tga"] "integer ldr_writeinterval" [120]
+PixelFilter "mitchell" "float B" [0.333300] "float C" [0.333300] "float xwidth" [2.000000] "float ywidth" [2.000000]
+Sampler "metropolis" "integer initsamples" [100000] "integer maxconsecrejects" [128] "float largemutationprob" [0.400000]
+SurfaceIntegrator "particletracing" "integer maxdepth" [32]
+Accelerator "kdtree" "integer intersectcost" [80] "integer traversalcost" [1] "float emptybonus" [0.200000] "integer maxprims" [1] "integer maxdepth" [-1]
+
+WorldBegin
+
+Include "mattetranslucenttest-mat.lxm"
+
+Include "mattetranslucenttest-geom.lxo"
+
+WorldEnd
+

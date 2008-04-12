@@ -1,0 +1,48 @@
+	# Material 'diffusescreen'
+Texture "diffusescreen--Kr" "color" "constant" "color value" [0.000000 0.000000 0.000000]
+Texture "diffusescreen--Kt.map" "color" "imagemap" "string filename" ["c:\\lux\\current\\testsuite\\mattetranslucent\\jpgtestimage.jpg"] "float vscale" [-1.0]
+Texture "diffusescreen--Kt.value" "color" "constant" "color value" [0.900000 0.900000 0.900000]
+Texture "diffusescreen--Kt" "color" "scale" "texture tex1" ["diffusescreen--Kt.value"] "texture tex2" ["diffusescreen--Kt.map"]
+Texture "diffusescreen--sigma" "float" "constant" "float value" [0.000000]
+Texture "diffusescreen--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material 'emit2'
+
+	# Material 'emit'
+
+	# Material 'tralu4'
+Texture "tralu4--Kr" "color" "constant" "color value" [0.900000 0.900000 0.900000]
+Texture "tralu4--Kt" "color" "constant" "color value" [0.037417 0.017894 0.000000]
+Texture "tralu4--sigma" "float" "constant" "float value" [0.000000]
+Texture "tralu4--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material 'tralu3'
+Texture "tralu3--Kr" "color" "constant" "color value" [0.900000 0.900000 0.900000]
+Texture "tralu3--Kt" "color" "constant" "color value" [0.195874 0.195874 0.195874]
+Texture "tralu3--sigma" "float" "constant" "float value" [0.000000]
+Texture "tralu3--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material 'tralu2'
+Texture "tralu2--Kr" "color" "constant" "color value" [0.042630 0.042630 0.042630]
+Texture "tralu2--Kt" "color" "constant" "color value" [0.871549 0.900000 0.000000]
+Texture "tralu2--sigma" "float" "constant" "float value" [0.000000]
+Texture "tralu2--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material 'tralu1'
+Texture "tralu1--Kr" "color" "constant" "color value" [0.000000 0.000000 0.000000]
+Texture "tralu1--Kt" "color" "constant" "color value" [0.900000 0.900000 0.900000]
+Texture "tralu1--sigma" "float" "constant" "float value" [0.000000]
+Texture "tralu1--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material 'floor'
+Texture "floor--Kd" "color" "constant" "color value" [0.052329 0.052329 0.052329]
+Texture "floor--Ks" "color" "constant" "color value" [0.039381 0.039381 0.039381]
+Texture "floor--uroughness" "float" "constant" "float value" [0.020000]
+Texture "floor--vroughness" "float" "constant" "float value" [0.020000]
+Texture "floor--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material 'wall'
+Texture "wall--Kd" "color" "constant" "color value" [0.900000 0.900000 0.900000]
+Texture "wall--sigma" "float" "constant" "float value" [0.000000]
+Texture "wall--bumpmap" "float" "constant" "float value" [0.000000]
+
