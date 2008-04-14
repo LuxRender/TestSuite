@@ -1,0 +1,76 @@
+	# Material 'text'
+Texture "text--roughness" "float" "constant" "float value" [0.100000]
+Texture "text--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material 'check'
+Texture "check--Kd" "color" "constant" "color value" [0.241559 0.241559 0.241559]
+Texture "check--sigma" "float" "constant" "float value" [0.000000]
+Texture "check--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material 'emit'
+
+	# Material '5'
+Texture "5--Kd" "color" "constant" "color value" [0.682312 0.267655 0.267655]
+Texture "5--sigma" "float" "constant" "float value" [0.010000]
+Texture "5--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material '10'
+Texture "10--Kr" "color" "constant" "color value" [1.000000 1.000000 1.000000]
+Texture "10--Kt" "color" "constant" "color value" [0.000000 0.176795 1.000000]
+Texture "10--uroughness" "float" "constant" "float value" [0.000100]
+Texture "10--vroughness" "float" "constant" "float value" [0.000100]
+Texture "10--index" "float" "constant" "float value" [1.500000]
+Texture "10--cauchyb" "float" "constant" "float value" [0.000000]
+Texture "10--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material '4'
+Texture "4--Kr" "color" "constant" "color value" [1.000000 1.000000 1.000000]
+Texture "4--Kt" "color" "constant" "color value" [1.000000 1.000000 1.000000]
+Texture "4--index" "float" "constant" "float value" [1.500000]
+Texture "4--cauchyb" "float" "constant" "float value" [0.000000]
+Texture "4--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material '9'
+Texture "9--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material '8'
+Texture "8--Kd" "color" "constant" "color value" [1.000000 0.758800 0.000000]
+Texture "8--Ks" "color" "constant" "color value" [0.435254 0.435254 0.435254]
+Texture "8--roughness" "float" "constant" "float value" [0.010000]
+Texture "8--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material '3'
+Texture "3--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material '2'
+Texture "2--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material '7'
+Texture "7--Kr" "color" "constant" "color value" [0.367804 0.643307 0.252354]
+Texture "7--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material '12'
+Texture "12--Kd" "color" "constant" "color value" [0.025850 0.017605 0.055680]
+Texture "12--Ks" "color" "constant" "color value" [0.111500 0.111500 0.111500]
+Texture "12--uroughness" "float" "constant" "float value" [0.010000]
+Texture "12--vroughness" "float" "constant" "float value" [0.001000]
+Texture "12--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material '11'
+Texture "11--Kr" "color" "constant" "color value" [0.296538 0.177753 0.682312]
+Texture "11--Ks" "color" "constant" "color value" [1.000000 1.000000 1.000000]
+Texture "11--roughness" "float" "constant" "float value" [0.010000]
+Texture "11--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material '6'
+Texture "6--roughness" "float" "constant" "float value" [0.010000]
+Texture "6--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material '1'
+Texture "1--bumpmap" "float" "constant" "float value" [0.000000]
+
+	# Material 'floor_plane'
+Texture "floor_plane--Kd" "color" "constant" "color value" [1.000000 1.000000 1.000000]
+Texture "floor_plane--sigma" "float" "constant" "float value" [0.000000]
+Texture "floor_plane--bumpmap" "float" "constant" "float value" [0.000000]
+

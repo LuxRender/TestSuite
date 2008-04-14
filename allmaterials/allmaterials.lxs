@@ -1,0 +1,20 @@
+# Lux Render v0.1 Scene File
+# Exported by LuxBlend_0.1_alpha-MatEditor
+
+LookAt 0.000000 0.000000 29.201870 0.000000 0.000000 28.201870 0.000000 1.000000 0.000000
+Camera "perspective" "float fov" [29.862835] "float hither" [0.100000] "float yon" [100.000000] "float lensradius" [0.000000] "float focaldistance" [18.432167] "float shutteropen" [0.000000] "float shutterclose" [1.000000] "float screenwindow" [-1.000000 1.000000 -0.750000 0.750000]
+
+Film "multiimage" "integer xresolution" [1024] "integer yresolution" [768] "string tonemapper" ["reinhard"] "float reinhard_burn" [6.000000] "float reinhard_prescale" [1.000000] "float reinhard_postscale" [1.000000] "float gamma" [2.200000] "float dither" [0.000000] "float bloomwidth" [0.000000] "float bloomradius" [0.000000] "integer ldr_displayinterval" [12] "string igi_filename" ["c:\\lux\\current\\testsuite\\materials\\allmaterials.igi"] "integer igi_writeinterval" [120] "string hdr_filename" ["c:\\lux\\current\\testsuite\\materials\\allmaterials.exr"] "integer hdr_writeinterval" [120] "string ldr_filename" ["c:\\lux\\current\\testsuite\\materials\\allmaterials.tga"] "integer ldr_writeinterval" [120]
+PixelFilter "mitchell" "float B" [0.333300] "float C" [0.333300] "float xwidth" [2.000000] "float ywidth" [2.000000]
+Sampler "metropolis"
+SurfaceIntegrator "path" "integer maxdepth" [10] 
+Accelerator "kdtree" "integer intersectcost" [80] "integer traversalcost" [1] "float emptybonus" [0.200000] "integer maxprims" [1] "integer maxdepth" [-1]
+
+WorldBegin
+
+Include "allmaterials-mat.lxm"
+
+Include "allmaterials-geom.lxo"
+
+WorldEnd
+
