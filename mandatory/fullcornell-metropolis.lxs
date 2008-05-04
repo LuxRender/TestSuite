@@ -4,21 +4,11 @@
 LookAt 2.780000 7.690000 2.098824   2.780000 6.690000 2.098824 -0.000000 0.000000 1.000000
 Camera "perspective" "float fov" [39.146252] "float lensradius" [0.000000] "float focaldistance" [2.000000] 
 
-Film "multiimage"
-     "integer xresolution" [600] "integer yresolution" [600]
-	 "string igi_filename" ["fullcornell-mlt.igi"]
-	 	"integer igi_writeinterval" [120]
-	 "string hdr_filename" ["fullcornell-mlt.exr"]
-	 	"integer hdr_writeinterval" [120]
-	 "string ldr_filename" ["fullcornell-mlt.tga"]
-		"integer ldr_writeinterval" [120]
-		"integer ldr_displayinterval" [12]
-		"string tonemapper" ["reinhard"]
-			"float reinhard_prescale" [1.000000]
-			"float reinhard_postscale" [1.000000]
-			"float reinhard_burn" [6.000000]
-		"float gamma" [2.200000]
-		"float dither" [0.000000]
+Film "fleximage"
+     "integer xresolution" [800] "integer yresolution" [800]
+	"bool write_tonemapped_exr" ["true"]
+	"bool write_untonemapped_exr" ["true"]
+	"string filename" ["fullcornell-metropolis"]
 
 PixelFilter "gaussian" "float xwidth" [2.000000] "float ywidth" [2.000000]
 
