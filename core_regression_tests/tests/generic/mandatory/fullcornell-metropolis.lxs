@@ -7,7 +7,7 @@ Camera "perspective" "float fov" [39.146252] "float lensradius" [0.000000] "floa
 Film "fleximage"
    "integer xresolution" [512]
    "integer yresolution" [512]
-   "integer haltspp" [4096]
+   "integer haltspp" [2048]
    "bool premultiplyalpha" ["false"]
    "string tonemapkernel" ["reinhard"]
    "float reinhard_prescale" [1.000000]

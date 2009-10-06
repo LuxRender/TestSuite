@@ -18,7 +18,7 @@ Camera "perspective"
 Film "fleximage"
    "integer xresolution" [512]
    "integer yresolution" [512]
-   "integer haltspp" [2048]
+   "integer haltspp" [1024]
    "bool premultiplyalpha" ["false"]
    "string tonemapkernel" ["reinhard"]
    "float reinhard_prescale" [1.000000]
