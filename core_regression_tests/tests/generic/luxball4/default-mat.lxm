@@ -1,0 +1,37 @@
+	# Material 'blacktext'
+MakeNamedMaterial "blacktext"
+   "string type" ["matte"]
+   "color Kd" [0.000000 0.000000 0.000000]
+
+	# Material 'emit.1'
+Texture "emit.1:light:L" "color" "blackbody"
+   "float temperature" [6500.000000]
+
+	# Material 'Material'
+MakeNamedMaterial "Material"
+   "string type" ["glass"]
+   "color Kr" [0.695228 0.787617 1.000000]
+   "color Kt" [0.646162 0.786142 1.000000]
+   "float index" [1.458000]
+   "bool architectural" ["false"]
+
+	# Material 'floor'
+MakeNamedMaterial "floor"
+   "string type" ["matte"]
+   "color Kd" [0.793110 0.793110 0.793110]
+
+	# Material 'text'
+MakeNamedMaterial "text"
+   "string type" ["matte"]
+   "color Kd" [0.793110 0.793110 0.793110]
+
+	# Material 'rubber'
+MakeNamedMaterial "rubber"
+   "string type" ["glossy"]
+   "color Kd" [0.217638 0.217638 0.217638]
+   "color Ks" [0.029741 0.029741 0.029741] "float index" [0.0] "float uroughness" [0.020000] "float vroughness" [0.020000]
+
+	# Material 'emit'
+Texture "emit:light:L" "color" "blackbody"
+   "float temperature" [6500.000000]
+

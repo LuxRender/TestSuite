@@ -1,0 +1,59 @@
+# Lux Render v0.1 Scene File
+# Exported by LuxBlend_01_alpha12
+
+LookAt 2.780000 7.690000 2.098824   2.780000 6.690000 2.098824 -0.000000 0.000000 1.000000
+Camera "perspective" "float fov" [39.146252] "float lensradius" [0.000000] "float focaldistance" [2.000000] 
+
+Film "fleximage"
+   "integer xresolution" [512]
+   "integer yresolution" [512]
+   "integer haltspp" [4096]
+   "bool premultiplyalpha" ["false"]
+   "string tonemapkernel" ["reinhard"]
+   "float reinhard_prescale" [1.000000]
+   "float reinhard_postscale" [1.200000]
+   "float reinhard_burn" [6.000000]
+   "integer displayinterval" [10]
+   "integer writeinterval" [480]
+   "string ldr_clamp_method" ["lum"]
+   "bool write_exr" ["false"]
+   "bool write_png" ["true"]
+   "string write_png_channels" ["RGB"]
+   "bool write_png_16bit" ["false"]
+   "bool write_png_gamutclamp" ["true"]
+   "bool write_tga" ["false"]
+   "string filename" ["fullcornell-metropolis"]
+   "bool write_resume_flm" ["true"]
+   "bool restart_resume_flm" ["true"]
+   "integer reject_warmup" [128]
+   "bool debug" ["false"]
+   "float colorspace_white" [0.314275 0.329411]
+   "float colorspace_red" [0.630000 0.340000]
+   "float colorspace_green" [0.310000 0.595000]
+   "float colorspace_blue" [0.155000 0.070000]
+   "float gamma" [2.200000]
+
+PixelFilter "gaussian" "float xwidth" [2.000000] "float ywidth" [2.000000]
+
+Sampler "metropolis"
+
+SurfaceIntegrator "path" "integer maxdepth" [7] 
+
+Accelerator "kdtree"
+
+
+WorldBegin
+
+AttributeBegin
+LightSource "sunsky" "integer nsamples" [1]
+            "vector sundir" [-0.102797 0.187277 0.976914]
+		"float gain" [0.5]
+		"float turbidity" [2.000000]
+AttributeEnd
+
+Include "fullcornell-mat.lxm"
+
+Include "fullcornell-geom.lxo"
+
+WorldEnd
+
