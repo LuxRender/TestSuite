@@ -1,0 +1,73 @@
+# Lux Render v0.6RC6 Scene File
+# Exported by LuxBlend Blender Exporter
+
+LookAt 6.590837 -7.260485 5.343665 
+       6.105632 -6.401647 5.179431 
+       -0.080777 0.142996 0.986421
+
+
+Camera "perspective"
+   "float fov" [77.319618]
+   "float screenwindow" [-1.000000 1.000000 -0.750000 0.750000]
+
+
+Film "fleximage"
+   "integer xresolution" [512] 
+   "integer yresolution" [384]
+   "integer haltspp" [128]
+   "bool premultiplyalpha" ["false"]
+   "string tonemapkernel" ["reinhard"]
+   "float reinhard_prescale" [1.000000]
+   "float reinhard_postscale" [1.200000]
+   "float reinhard_burn" [6.000000]
+   "integer displayinterval" [10]
+   "integer writeinterval" [240]
+   "string ldr_clamp_method" ["lum"]
+   "bool write_exr" ["false"]
+   "bool write_png" ["true"]
+   "string write_png_channels" ["RGB"]
+   "bool write_png_16bit" ["false"]
+   "bool write_png_gamutclamp" ["true"]
+   "bool write_tga" ["false"]
+   "string filename" ["default"]
+   "bool write_resume_flm" ["true"]
+   "bool restart_resume_flm" ["true"]
+   "integer reject_warmup" [128]
+   "bool debug" ["false"]
+   "float colorspace_white" [0.314275 0.329411]
+   "float colorspace_red" [0.630000 0.340000]
+   "float colorspace_green" [0.310000 0.595000]
+   "float colorspace_blue" [0.155000 0.070000]
+   "float gamma" [2.200000]
+
+PixelFilter "mitchell"
+   "float B" [0.750000]
+   "float C" [0.125000]
+
+Sampler "metropolis"
+   "float largemutationprob" [0.400000]
+
+SurfaceIntegrator "bidirectional"
+   "integer eyedepth" [16]
+   "integer lightdepth" [16]
+
+VolumeIntegrator "single"
+   "float stepsize" [1.000000]
+
+Accelerator "tabreckdtree"
+   "integer intersectcost" [80]
+   "integer traversalcost" [1]
+   "float emptybonus" [0.200000]
+   "integer maxprims" [1]
+   "integer maxdepth" [-1]
+
+WorldBegin
+
+Include "default-mat.lxm"
+
+Include "default-geom.lxo"
+
+Include "default-vol.lxv"
+
+WorldEnd
+

@@ -1,0 +1,24 @@
+	# Material 'mat_light'
+Texture "mat_light:light:L" "color" "blackbody"
+   "float temperature" [6500.000000]
+
+	# Material 'mat_blue'
+MakeNamedMaterial "mat_blue"
+   "string type" ["matte"]
+   "color Kd" [0.000000 0.000000 0.374624]
+
+	# Material 'mat_green'
+MakeNamedMaterial "mat_green"
+   "string type" ["matte"]
+   "color Kd" [0.000000 0.374624 0.000000]
+
+	# Material 'mat_red'
+MakeNamedMaterial "mat_red"
+   "string type" ["matte"]
+   "color Kd" [0.374624 0.000000 0.000000]
+
+	# Material 'mat_wall'
+MakeNamedMaterial "mat_wall"
+   "string type" ["matte"]
+   "color Kd" [0.217638 0.217638 0.217638]
+

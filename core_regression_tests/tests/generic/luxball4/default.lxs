@@ -1,0 +1,77 @@
+# Lux Render v0.6RC6 Scene File
+# Exported by LuxBlend Blender Exporter
+
+LookAt 0.595074 0.220416 0.234434 
+       0.592341 0.228386 0.229047 
+       -0.001972 0.005017 0.008423
+
+
+Camera "perspective"
+   "float fov" [22.619865]
+   "float lensradius" [0.001200]
+   "bool autofocus" ["true"]
+   "integer blades" [6]
+   "string distribution" ["uniform"]
+   "integer power" [1]
+   "float screenwindow" [-1.000000 1.000000 -1.000000 1.000000]
+
+Film "fleximage"
+   "integer xresolution" [512]
+   "integer yresolution" [512]
+   "integer haltspp" [1024]
+   "bool premultiplyalpha" ["false"]
+   "string tonemapkernel" ["reinhard"]
+   "float reinhard_prescale" [1.000000]
+   "float reinhard_postscale" [1.200000]
+   "float reinhard_burn" [6.000000]
+   "integer displayinterval" [10]
+   "integer writeinterval" [480]
+   "string ldr_clamp_method" ["lum"]
+   "bool write_exr" ["false"]
+   "bool write_png" ["true"]
+   "string write_png_channels" ["RGB"]
+   "bool write_png_16bit" ["false"]
+   "bool write_png_gamutclamp" ["true"]
+   "bool write_tga" ["false"]
+   "string filename" ["default"]
+   "bool write_resume_flm" ["true"]
+   "bool restart_resume_flm" ["true"]
+   "integer reject_warmup" [128]
+   "bool debug" ["false"]
+   "float colorspace_white" [0.314275 0.329411]
+   "float colorspace_red" [0.630000 0.340000]
+   "float colorspace_green" [0.310000 0.595000]
+   "float colorspace_blue" [0.155000 0.070000]
+   "float gamma" [2.200000]
+
+PixelFilter "mitchell"
+   "float B" [0.750000]
+   "float C" [0.125000]
+
+Sampler "metropolis"
+   "float largemutationprob" [0.400000]
+   "integer maxconsecrejects" [100]
+   "integer initsamples" [262144]
+   "bool usevariance" ["false"]
+
+SurfaceIntegrator "bidirectional"
+   "integer eyedepth" [16]
+   "integer lightdepth" [16]
+
+VolumeIntegrator "single"
+   "float stepsize" [1.000000]
+
+Accelerator "qbvh"
+   "integer maxprimsperleaf" [4]
+
+
+WorldBegin
+
+Include "default-mat.lxm"
+
+Include "default-geom.lxo"
+
+Include "default-vol.lxv"
+
+WorldEnd
+

@@ -1,0 +1,10 @@
+	# Material 'mat_white'
+MakeNamedMaterial "mat_white"
+   "string type" ["matte"]
+   "color Kd" [0.374624 0.374624 0.374624]
+
+	# Material 'mat_cube'
+MakeNamedMaterial "mat_cube"
+   "string type" ["matte"]
+   "color Kd" [0.374624 0.000000 0.000000]
+
