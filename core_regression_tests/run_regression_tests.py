@@ -165,10 +165,15 @@ print "Test report:"
 
 someFailed = False
 for t in testList:
-    if (testResults[t]):
-        print "Test " + t + " result: OK"
+    if len(t) >= 32:
+        msg = "Test ..." + t[max(0, len(t) - 64) : len(t)] +" result: "
     else:
-        print "Test " + t + " result: FAILED !!!" 
+        msg = "Test " + t +" result: "
+
+    if (testResults[t]):
+        print msg + "OK"
+    else:
+        print msg + "FAILED !!!" 
     if (not testResults[t]):
         someFailed = True
 
