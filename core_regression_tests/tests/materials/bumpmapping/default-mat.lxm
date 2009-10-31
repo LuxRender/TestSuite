@@ -1,0 +1,36 @@
+	# Material 'mat2'
+Texture "mat2::bumpmap" "float" "imagemap"
+   "string wrap" ["repeat"]
+   "string filename" ["map.png"]
+   "float gamma" [2.200000]
+   "float gain" [1.000000]
+   "string filtertype" ["bilinear"]
+   "string mapping" ["uv"]
+   "float uscale" [-32.000000]
+   "float vscale" [32.000000]
+   "float udelta" [0.000000]
+   "float vdelta" [0.000000]
+Texture "mat2::bumpmap.scale" "float" "scale" "texture tex1" ["mat2::bumpmap"] "float tex2" [0.019999999553]
+MakeNamedMaterial "mat2"
+   "string type" ["matte"]
+   "color Kd" [0.374624 0.374624 0.374624] "texture bumpmap" ["mat2::bumpmap.scale"]
+   #"float bumpmapsampledistance" [0.001]
+   #"float bumpmapsampledistance" [0.00001]
+
+	# Material 'mat1'
+Texture "mat1::bumpmap" "float" "imagemap"
+   "string wrap" ["repeat"]
+   "string filename" ["map.png"]
+   "float gamma" [2.200000]
+   "float gain" [1.000000]
+   "string filtertype" ["bilinear"]
+   "string mapping" ["uv"]
+   "float uscale" [-1.000000]
+   "float vscale" [1.000000]
+   "float udelta" [0.000000]
+   "float vdelta" [0.000000]
+Texture "mat1::bumpmap.scale" "float" "scale" "texture tex1" ["mat1::bumpmap"] "float tex2" [0.00999999977648]
+MakeNamedMaterial "mat1"
+   "string type" ["matte"]
+   "color Kd" [0.374624 0.374624 0.374624] "texture bumpmap" ["mat1::bumpmap.scale"]
+
