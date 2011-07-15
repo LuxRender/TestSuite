@@ -6,17 +6,17 @@ Film "fleximage"
      "integer xresolution" [400] "integer yresolution" [400]
 	 "string filename" ["out_pathn"]
 		"integer writeinterval" [5]
-		"string tonemapper" ["reinhard"]
+		"string tonemapkernel" ["reinhard"]
 			"float reinhard_prescale" [1.000000]
 			"float reinhard_postscale" [1.000000]
 			"float reinhard_burn" [6.000000]
 		"float gamma" [2.200000]
-		"float dither" [0.000000]
+#		"float dither" [0.000000]
 
 PixelFilter "box" "float xwidth" [0.5] "float ywidth" [0.5]
 #Sampler "lowdiscrepancy" "string pixelsampler" ["vegas"] "integer pixelsamples" [4]
-#SurfaceIntegrator "path" "integer maxdepth" [16]
-SurfaceIntegrator "pathn" "integer maxdepth" [3]
+SurfaceIntegrator "path" "integer maxdepth" [16]
+#SurfaceIntegrator "pathn" "integer maxdepth" [3]
 
 #Sampler "bestcandidate" "integer pixelsamples" [30000] 
 Sampler "random" "integer xsamples" [1] "integer ysamples" [1]  "string pixelsampler"  ["vegas"] # ["linear"] #
