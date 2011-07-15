@@ -1,6 +1,6 @@
 	# Material 'diffusescreen'
 Texture "diffusescreen--Kr" "color" "constant" "color value" [0.000000 0.000000 0.000000]
-Texture "diffusescreen--Kt.map" "color" "imagemap" "string filename" ["c:\\lux\\current\\testsuite\\mattetranslucent\\jpgtestimage.jpg"] "float vscale" [-1.0]
+Texture "diffusescreen--Kt.map" "color" "imagemap" "string filename" ["jpgtestimage.jpg"] "float vscale" [-1.0]
 Texture "diffusescreen--Kt.value" "color" "constant" "color value" [0.900000 0.900000 0.900000]
 Texture "diffusescreen--Kt" "color" "scale" "texture tex1" ["diffusescreen--Kt.value"] "texture tex2" ["diffusescreen--Kt.map"]
 Texture "diffusescreen--sigma" "float" "constant" "float value" [0.000000]
