@@ -1,0 +1,160 @@
+# Materials File
+
+MakeNamedVolume "world" "clear"
+	"float fresnel" [1.000000000000000]
+	"color absorption" [0.00000000 0.00000000 0.00000000]
+
+MakeNamedVolume "glass2" "clear"
+	"float fresnel" [1.458999991416931]
+	"color absorption" [0.82684834 0.23764531 0.06899287]
+
+MakeNamedVolume "glass" "clear"
+	"float fresnel" [1.000000000000000]
+	"color absorption" [0.00000000 0.71034241 0.76356871]
+
+MakeNamedVolume "roughglass" "clear"
+	"float fresnel" [1.000000000000000]
+	"color absorption" [0.49044896 0.17374508 0.23016078]
+
+MakeNamedVolume "mattetranslucent" "homogeneous"
+	"float fresnel" [1.000000000000000]
+	"color g" [0.00000000 0.00000000 0.00000000]
+	"color sigma_a" [0.25652430 1.04540887 0.15592306]
+	"color sigma_s" [50.00000000 30.77039123 48.81736040]
+
+MakeNamedVolume "glossytranslucent" "homogeneous"
+	"float fresnel" [1.000000000000000]
+	"color g" [0.00000000 0.00000000 0.00000000]
+	"color sigma_a" [2.10343191 0.38413760 0.25230260]
+	"color sigma_s" [21.20957077 47.44986296 50.00000000]
+
+MakeNamedMaterial "scatter"
+	"color Kd" [0.63999999 0.20102988 0.16023235]
+	"string type" ["scatter"]
+
+MakeNamedMaterial "null"
+	"string type" ["null"]
+
+MakeNamedMaterial "glass2"
+	"bool architectural" ["false"]
+	"bool dispersion" ["false"]
+	"string type" ["glass2"]
+
+MakeNamedMaterial "mix"
+	"string namedmaterial1" ["glass2"]
+	"string namedmaterial2" ["scatter"]
+	"float amount" [0.250000000000000]
+	"string type" ["mix"]
+
+MakeNamedMaterial "velvet"
+	"color Kd" [0.38254768 0.32426664 0.63999999]
+	"float thickness" [0.100000001490116]
+	"string type" ["velvet"]
+
+MakeNamedMaterial "text"
+	"color Kd" [0.05000000 0.05000000 0.05000000]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "mirror"
+	"float film" [0.000000000000000]
+	"float filmindex" [1.333299994468689]
+	"color Kr" [0.69999999 0.69999999 0.69999999]
+	"string type" ["mirror"]
+
+MakeNamedMaterial "carpaint"
+	"string name" ["polaris silber"]
+	"string type" ["carpaint"]
+
+MakeNamedMaterial "glossy lossy"
+	"color Kd" [0.31562108 0.63999999 0.34461218]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.075000002980232]
+	"float vroughness" [0.075000002980232]
+	"string type" ["glossy_lossy"]
+
+MakeNamedMaterial "glass"
+	"bool architectural" ["false"]
+	"float cauchyb" [0.000000000000000]
+	"float film" [0.000000000000000]
+	"float filmindex" [1.333299994468689]
+	"float index" [1.519999980926514]
+	"color Kr" [0.69999999 0.31606460 0.29823279]
+	"color Kt" [1.00000000 1.00000000 1.00000000]
+	"string type" ["glass"]
+
+MakeNamedMaterial "roughglass"
+	"float cauchyb" [0.000000000000000]
+	"float index" [1.519999980926514]
+	"color Kr" [0.69999999 0.69999999 0.69999999]
+	"color Kt" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.300000011920929]
+	"float vroughness" [0.300000011920929]
+	"string type" ["roughglass"]
+
+MakeNamedMaterial "metal"
+	"float uroughness" [0.200000002980232]
+	"float vroughness" [0.200000002980232]
+	"string name" ["gold"]
+	"string type" ["metal"]
+
+MakeNamedMaterial "shinymetal"
+	"float film" [0.000000000000000]
+	"float filmindex" [1.333299994468689]
+	"color Kr" [0.69999999 0.69999999 0.69999999]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float uroughness" [0.100000001490116]
+	"float vroughness" [0.100000001490116]
+	"string type" ["shinymetal"]
+
+MakeNamedMaterial "glossytranslucent"
+	"bool onesided" ["true"]
+	"bool multibounce" ["false"]
+	"color Kt" [1.00000000 1.00000000 1.00000000]
+	"color Kd" [0.24044707 0.44000000 0.43439683]
+	"float index" [1.332829952239990]
+	"color Ks" [1.00000000 1.00000000 1.00000000]
+	"float uroughness" [0.019999999552965]
+	"float vroughness" [0.019999999552965]
+	"string type" ["glossytranslucent"]
+
+MakeNamedMaterial "glossy"
+	"bool multibounce" ["false"]
+	"color Kd" [0.14286469 0.63999999 0.22097969]
+	"color Ks" [0.04000000 0.04000000 0.04000000]
+	"float index" [0.000000000000000]
+	"float uroughness" [0.039999999105930]
+	"float vroughness" [0.039999999105930]
+	"string type" ["glossy"]
+
+MakeNamedMaterial "mattetranslucent"
+	"bool energyconserving" ["true"]
+	"color Kr" [0.31988940 0.28074303 0.40000001]
+	"color Kt" [1.00000000 1.00000000 1.00000000]
+	"float sigma" [0.000000000000000]
+	"string type" ["mattetranslucent"]
+
+MakeNamedMaterial "matte"
+	"color Kd" [0.63999999 0.61838853 0.25185055]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+Texture "cube floor gen" "float" "checkerboard"
+	"integer dimension" [3]
+	"float tex1" [0.850000143051147]
+	"float tex2" [0.179999992251396]
+	"string coordinates" ["local"]
+	"vector translate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector rotate" [0.000000000000000 0.000000000000000 0.000000000000000]
+	"vector scale" [0.100000001490116 0.100000001490116 0.100000001490116]
+
+Texture "cube floor diff" "color" "mix"
+	"texture amount" ["cube floor gen"]
+	"color tex1" [0.69999999 0.69999999 0.69999999]
+	"color tex2" [0.30000001 0.30000001 0.30000001]
+
+MakeNamedMaterial "cube"
+	"texture Kd" ["cube floor diff"]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
