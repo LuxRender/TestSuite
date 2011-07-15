@@ -6,19 +6,14 @@ Camera "perspective" "float fov" [37.849289] "float lensradius" [0.000000] "floa
 
 Film "multiimage"
      "integer xresolution" [800] "integer yresolution" [600]
-	 "string igi_filename" ["dispersion-mltsmallprob.igi"]
-	 	"integer igi_writeinterval" [120]
-	 "string hdr_filename" ["dispersion-mltsmallprob.exr"]
-	 	"integer hdr_writeinterval" [120]
-	 "string ldr_filename" ["dispersion-mltsmallprob.tga"]
-		"integer ldr_writeinterval" [120]
-		"integer ldr_displayinterval" [12]
-		"string tonemapper" ["reinhard"]
+		"string filename" ["dispersion-mltsmallprob"]
+		"integer writeinterval" [120]
+		"integer displayinterval" [12]
+		"string tonemapkernel" ["reinhard"]
 			"float reinhard_prescale" [1.000000]
 			"float reinhard_postscale" [1.000000]
 			"float reinhard_burn" [6.000000]
 		"float gamma" [2.200000]
-		"float dither" [0.000000]
 
 PixelFilter "gaussian" "float xwidth" [2.000000] "float ywidth" [2.000000]
 
